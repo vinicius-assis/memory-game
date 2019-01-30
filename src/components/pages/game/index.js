@@ -1,9 +1,8 @@
 const $root = document.querySelector("#root");
 
-const cardCollab = {
-  src: "icon-collabcode",
-  alt: "Gueio Mascote da CollabCode"
-};
+const $cardsWrapper = createCardsWrapper();
+
+const createMemoryCard = memoryCard();
 
 const cardJs = {
   className: "-active",
@@ -47,7 +46,6 @@ const cardWoman = {
   alt: "Imagem de uma mulher desenvolvedora"
 };
 
-const $cardsWrapper = createCardsWrapper();
 $cardsWrapper.insertAdjacentHTML("beforeend", createMemoryCard(cardJs));
 $cardsWrapper.insertAdjacentHTML("beforeend", createMemoryCard(cardJs));
 $cardsWrapper.insertAdjacentHTML("beforeend", createMemoryCard(cardJava));
@@ -58,3 +56,11 @@ $cardsWrapper.insertAdjacentHTML("beforeend", createMemoryCard(cardWoman));
 $cardsWrapper.insertAdjacentHTML("beforeend", createMemoryCard(cardWoman));
 
 $root.insertAdjacentElement("beforeend", $cardsWrapper);
+
+const $cards = document.querySelectorAll(".memory-card");
+
+$cards.forEach(item => {
+  item.addEventListener("click", () => {
+    item.classList.toggle("-active");
+  });
+});
