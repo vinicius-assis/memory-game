@@ -5,10 +5,6 @@ const layerStart = (function() {
     const $children = $component.querySelectorAll("*");
 
     $children.forEach(item => item.classList.add("-disable"));
-
-    // setTimeout(() => {
-    //   $component.remove();
-    // }, 500);
   };
 
   module.handleTransitionEnd = (event, $component) => {

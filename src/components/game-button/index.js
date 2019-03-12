@@ -25,7 +25,7 @@ const gameButton = (function() {
 
       .game-button.-disable {
         opacity: 0;
-        transform: scale(2.5) translateX(-20%);
+        transform: translate(-50%, -35%) scale(2.5);
         transform-origin: bottom;
       }
     `;
