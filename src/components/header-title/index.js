@@ -18,11 +18,6 @@ const headerCollab = (function() {
         transform: translateX(-50%) translateY(-30%);
       }
 
-      .collab-icon {
-        width: 170px;
-        height: 175px;
-      }
-
       .header-title {
         color: #f25a70;
         text-transform: uppercase;
@@ -40,12 +35,12 @@ const headerCollab = (function() {
   $head.insertAdjacentElement('beforeend', $style);
 }
 
-  module.render = content => {
+  module.render = (content, img) => {
     module._style();
 
     return `
       <section class="header-wrap">
-        <img class="collab-icon" src="img/icon-collabcode.png" >
+        ${img}
         <h2 class="header-title">${content}</h2>
       </section>
     `
