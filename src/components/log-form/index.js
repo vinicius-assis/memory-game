@@ -26,6 +26,16 @@ const logForm = (function() {
         font-weight: bold;
         font-family: 'Comfortaa', sans-serif;
       }
+
+      .test {
+        color: #fff;
+        width: 300px;
+        height: 48px;
+        border-radius: 30px;
+        background-color: #f25a70;
+        margin-top: 20px;
+        cursor: pointer;
+      }
     `
 
 
@@ -39,6 +49,7 @@ const logForm = (function() {
     return `
       <label class="label-form" for="${name}">${name}</label>
       <input class="input-form" type="${type}" placeholder="${name}">
+      <button class="test">Testar validação!</button>
     `
   }
 
