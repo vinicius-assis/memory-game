@@ -6,9 +6,14 @@ const gueioLogo = (function() {
     const $style = document.createElement('style');
 
     $style.textContent = `
-      .collab-icon {
-        width: 170px;
-        height: 175px;
+      .logo-collabcode {
+        background-color: #fff;
+        display: inline-block;
+        border: solid 40px white;
+        border-radius: 50%;
+      }
+      .logo-collabcode > .logo {
+        width: 175px;
       }
     `
 
@@ -19,7 +24,9 @@ const gueioLogo = (function() {
     module._style();
 
     return `
-      <img src="${src}" alt="${alt}">
+      <figure class="logo-collabcode">
+        <img class="logo" src="${src}" alt="${alt}">
+      </figure>
     `
   }
 
