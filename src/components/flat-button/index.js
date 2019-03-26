@@ -9,6 +9,10 @@ const flatButton = (function() {
 
     $style.textContent = `
       .flat-button-${module._id} {
+        box-sizing: border-box;
+        display: inline-flex;
+        justify-content: center;
+        padding-top: 60px;
         background-color: ${active ? '#f25a70' : '#eae6da'};
         color: ${active ? '#fff' : '#fffcee'};
         font-size: 24px;
@@ -16,7 +20,6 @@ const flatButton = (function() {
         width: 50%;
         height: 176px;
         text-transform: uppercase;
-        padding-bottom: 20px;
       }
     `
 
