@@ -21,9 +21,9 @@ const inputCollab = (function() {
     $head.insertAdjacentElement("beforeend", $style);
   }
 
-  module.render = (placeholder) => {
+  module.render = (placeholder, type = 'text') => {
     module._style();
-    return `<input class="input-collab" placeholder="${placeholder}" />`
+    return `<input class="input-collab" type="${type}" placeholder="${placeholder}" />`
   }
 
   return {

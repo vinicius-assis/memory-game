@@ -17,16 +17,16 @@ const formSingUp = (function() {
 
   module._children = () => {
     const $emailLabel = labelCollab.render('E-mail');
-    const $emailInput = inputCollab.render('seuemail@exemplo.com');
+    const $emailInput = inputCollab.render('seuemail@exemplo.com', 'email');
 
     const $usernameLabel = labelCollab.render('Username');
     const $usernameInput = inputCollab.render('Username');
 
     const $passwordLabel = labelCollab.render('Password');
-    const $passwordInput = inputCollab.render('Sua senha');
+    const $passwordInput = inputCollab.render('Sua senha', 'password');
 
     const $confirmPasswordLabel = labelCollab.render('Confirme Password');
-  const $confirmPasswordInput = inputCollab.render('De novo para não esquecer');
+  const $confirmPasswordInput = inputCollab.render('De novo para não esquecer', 'password');
 
     const $collabButton = collabButton.render('Submit');
   
