@@ -26,7 +26,7 @@ const formSingUp = (function() {
     const $passwordInput = inputCollab.render('Sua senha');
 
     const $confirmPasswordLabel = labelCollab.render('Confirme Password');
-    const $confirmPasswordInput = inputCollab.render('De novo para não esquecer');
+  const $confirmPasswordInput = inputCollab.render('De novo para não esquecer');
 
     const $collabButton = collabButton.render('Submit');
   
