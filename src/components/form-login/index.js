@@ -25,7 +25,9 @@ const formLogin = (function() {
       placeholder: 'Seu Password', 
       type: 'password'});
 
-    const $recoverPassword = recoverPassword.render();
+    const $recoverPassword = recoverPassword.render({
+      href: "#"
+    });
 
     const $collabButton = collabButton.render('Login');
 

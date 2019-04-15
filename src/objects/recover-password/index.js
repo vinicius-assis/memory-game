@@ -15,6 +15,7 @@ const recoverPassword = (function() {
         opacity: 0.73;
         margin-top: 43px;
         margin-bottom: 113px;
+        text-decoration: none;
         cursor: pointer;
       }
     `
@@ -22,11 +23,11 @@ const recoverPassword = (function() {
     $head.insertAdjacentElement("beforeend", $style);
   }
 
-  module.render = (content = "Forget password?") => {
+  module.render = ({content = "Forget password?", href}) => {
     module._style();
 
     return `
-      <a class="recover-password">${content}</a>
+      <a href="${href}" class="recover-password">${content}</a>
     `
   }
 
