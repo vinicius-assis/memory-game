@@ -21,6 +21,8 @@ const formLogin = (function() {
     const $passwordLabel = labelCollab.render('Password');
     const $passwordInput = inputCollab.render('Seu Password', 'password');
 
+    const $eyeCollabCode = eyeCollabCode.render(); 
+
     const $recoverPassword = recoverPassword.render();
 
     const $collabButton = collabButton.render('Login');
@@ -31,6 +33,8 @@ const formLogin = (function() {
 
       ${$passwordLabel}
       ${$passwordInput}
+
+      ${$eyeCollabCode}
 
       ${$recoverPassword}
 
