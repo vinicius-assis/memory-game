@@ -1,7 +1,7 @@
 const login = (function() {
   const $root = document.querySelector('#root');
 
-  const $singupButton = flatButton.render('Singup');
+  const $signupButton = flatButton.render('Signup');
   const $loginButton = flatButton.render('Login', true);
 
   const $gueiLogo = gueioLogo.render();
@@ -12,7 +12,7 @@ const login = (function() {
 
 
   $root.insertAdjacentHTML("beforeend", $loginButton);
-  $root.insertAdjacentHTML("beforeend", $singupButton);
+  $root.insertAdjacentHTML("beforeend", $signupButton);
   $root.insertAdjacentHTML("beforeend", $logoWrapper);
   $root.insertAdjacentHTML("beforeend", $formLogin);
 });

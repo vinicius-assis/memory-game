@@ -1,4 +1,4 @@
-const formSingUp = (function() {
+const formSignUp = (function() {
   const module = {};
 
   module._style = () => {

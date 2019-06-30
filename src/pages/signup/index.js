@@ -1,7 +1,7 @@
-const singup = (function() {
+const signup = (function() {
   const $root = document.querySelector('#root');
 
-  const $singupButton = flatButton.render('Singup', true);
+  const $signupButton = flatButton.render('Signup', true);
   const $loginButton = flatButton.render('Login');
 
   
@@ -9,10 +9,10 @@ const singup = (function() {
   const $titleCollabcode = titleCollabcode.render();
   const $logoWrapper = logoWrapper.render($gueioLogo, $titleCollabcode);
 
-  const $formSingUp = formSingUp.render();
+  const $formSignUp = formSignUp.render();
 
   $root.insertAdjacentHTML("beforeend", $loginButton);
-  $root.insertAdjacentHTML("beforeend", $singupButton);
+  $root.insertAdjacentHTML("beforeend", $signupButton);
   $root.insertAdjacentHTML("beforeend", $logoWrapper);
-  $root.insertAdjacentHTML("beforeend", $formSingUp);
+  $root.insertAdjacentHTML("beforeend", $formSignUp);
 });
