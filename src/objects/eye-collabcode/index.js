@@ -14,20 +14,37 @@ const eyeCollabCode = (function() {
         background-repeat: no-repeat;
         background-position: center;
         text-indent: 99999px;
+        cursor: pointer;
       }
     `
 
     $head.insertAdjacentElement('beforeend', $style);
   }
 
-  module.render = () => {
+  module.handleClick = function() {
+    const attrFor = this.getAttribute("for");
+    const $input = document.querySelector(`#${attrFor}`)
+
+    $input.getAttribute("type")  === "text" 
+      ? $input.setAttribute("type", "password") 
+      : $input.setAttribute("type", "text")
+  }
+
+  module.render = ({attrFor = ""}) => {
     module._style();
+
     return `
-      <label class="eye-collabcode">Mostrar Senha</label>
+      <label
+        for="${attrFor}"
+        class="eye-collabcode"
+        onClick="eyeCollabCode.handleClick.bind(this)()">
+        Mostrar Senha
+      </label>
     `
   };
 
   return {
-    render: module.render
+    render: module.render,
+    handleClick: module.handleClick
   }
 })()

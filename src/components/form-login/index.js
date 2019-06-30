@@ -16,12 +16,18 @@ const formLogin = (function() {
 
   module._children = () => {
     const $loginLabel = labelCollab.render('Username ou e-mail');
-    const $loginInput = inputCollab.render('example@email.com.br', 'email');
+    const $loginInput = inputCollab.render('example@email.com.br', 'email', 'email');
 
     const $passwordLabel = labelCollab.render('Password');
-    const $passwordInput = inputCollab.render('Seu Password', 'password');
+    const $passwordInput = inputCollab.render({
+      id: 'password',
+      placeholder: 'Seu password',
+      type: 'password'
+    });
 
-    const $eyeCollabCode = eyeCollabCode.render(); 
+    const $eyeCollabCode = eyeCollabCode.render({
+      attrFor: 'password'
+    }); 
 
     const $recoverPassword = recoverPassword.render();
 
