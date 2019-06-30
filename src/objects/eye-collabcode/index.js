@@ -13,10 +13,12 @@ const eyeCollabCode = (function() {
         background-image: url(/img/eye.png);
         background-repeat: no-repeat;
         background-position: center;
-        text-indent: 99999px;
+        text-indent: -99999px;
         cursor: pointer;
-        opacity:0.5;
+        opacity:0.4;
         transition: opacity 400ms linear;
+        margin-left: auto;
+        transform: translateY(-140%)
       }
 
       .eye-collabcode.-active {
