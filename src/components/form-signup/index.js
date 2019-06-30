@@ -28,7 +28,10 @@ const formSignUp = (function() {
     const $confirmPasswordLabel = labelCollab.render('Confirme Password');
     const $confirmPasswordInput = inputCollab.render('De novo para não esquecer', 'password');
 
-    const $collabButton = collabButton.render('Submit');
+    const $collabButton = collabButton.render({
+      content: 'Submit',
+      path: 'login'
+    });
   
     return `
       ${$emailLabel}

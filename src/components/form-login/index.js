@@ -34,7 +34,10 @@ const formLogin = (function() {
 
     const $recoverPassword = recoverPassword.render();
 
-    const $collabButton = collabButton.render('Login');
+    const $collabButton = collabButton.render({
+      content: 'Login',
+      path: 'game'
+    });
 
     return `
       ${$loginLabel}

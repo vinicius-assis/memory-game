@@ -1,8 +1,8 @@
 const signup = (function() {
   const $root = document.querySelector('#root');
 
-  const $signupButton = flatButton.render('Signup', true);
-  const $loginButton = flatButton.render('Login');
+  const $signupButton = flatButton.render('Signup', true, 'signup');
+  const $loginButton = flatButton.render('Login', false, 'login');
 
   
   const $gueioLogo = gueioLogo.render();

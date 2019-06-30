@@ -1,8 +1,8 @@
 const login = (function() {
   const $root = document.querySelector('#root');
 
-  const $signupButton = flatButton.render('Signup');
-  const $loginButton = flatButton.render('Login', true);
+  const $signupButton = flatButton.render('Signup', false, "signup");
+  const $loginButton = flatButton.render('Login', true, "login");
 
   const $gueiLogo = gueioLogo.render();
   const $titleCollabcode = titleCollabcode.render('Hello!');
