@@ -1,4 +1,4 @@
-(function() {
+const singup = (function() {
   const $root = document.querySelector('#root');
 
   const $singupButton = flatButton.render('Singup', true);
@@ -15,4 +15,4 @@
   $root.insertAdjacentHTML("beforeend", $singupButton);
   $root.insertAdjacentHTML("beforeend", $logoWrapper);
   $root.insertAdjacentHTML("beforeend", $formSingUp);
-})()
+});
