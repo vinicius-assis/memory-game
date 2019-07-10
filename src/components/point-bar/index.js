@@ -11,6 +11,7 @@ const pointBar = (function() {
         height: 40px;
         text-align: center;
         font-family: 'Comfortaa', sans-serif;
+        position: relative;
       }
       .point-bar > .number {
         font-size: 20px;
@@ -23,11 +24,12 @@ const pointBar = (function() {
     $head.insertBefore($style, null);
   };
 
-  module.create = () => {
+  module.create = (element) => {
     module._style();
 
     return `
       <header class="point-bar">
+        ${element}
         <span class="number">0</span>
       </header>
     `;

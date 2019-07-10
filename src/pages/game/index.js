@@ -5,7 +5,9 @@ const game = (function() {
 
   const createMemoryCard = memoryCard.create();
 
-  const $pointBar = pointBar.create();
+  const $backButton = backButton.render('login');
+
+  const $pointBar = pointBar.create($backButton);
 
   const $layerStart = layerStart.render("Start");
 
