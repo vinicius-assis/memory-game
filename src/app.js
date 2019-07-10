@@ -9,4 +9,8 @@
 
   paths[hash] ? paths[hash]() : paths["#/404"]();
 
+  window.onhashchange = () => {
+    location.reload(true)
+  }
+
 })();
