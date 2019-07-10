@@ -13,7 +13,8 @@ const labelCollab = (function() {
         opacity: 0.5;
       }
       
-      .input-collab + .label-collab {
+      .input-collab + .label-collab,
+      .collab-error + .label-collab {
         margin-top: 30px;
       }
     `

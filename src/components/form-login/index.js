@@ -20,6 +20,9 @@ const formLogin = (function() {
       placeholder: 'example@email.com.br',
       type: 'email',
       id: 'email'});
+    
+    const $userError = collabError.render('email');
+    const $passwordError = collabError.render('password'); 
 
     const $passwordLabel = labelCollab.render('Password');
     const $passwordInput = inputCollab.render({
@@ -42,9 +45,11 @@ const formLogin = (function() {
     return `
       ${$loginLabel}
       ${$loginInput}
+      ${$userError}
 
       ${$passwordLabel}
       ${$passwordInput}
+      ${$passwordError}
 
       ${$eyeCollabCode}
 
